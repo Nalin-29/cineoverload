@@ -1,8 +1,8 @@
 export class CredentialsBean {
 
     userID: String ;
-	password :String ;
+    password: String ;
     loginStatus: number;
-    authQuestion:string;
-    authAnswer:string;
+    authQuestion: String;
+    authAnswer: String;
 }

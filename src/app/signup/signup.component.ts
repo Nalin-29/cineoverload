@@ -18,7 +18,11 @@ export class SignupComponent implements OnInit {
   gender = '';
   genderFlag = true;
   //  constructor(private formBuilder: FormBuilder) { }
-  constructor(private router: Router, private formBuilder: FormBuilder, private userService: MovieServiceService) {
+  constructor(private router: Router, private formBuilder: FormBuilder,
+    private userService: MovieServiceService) {
+      if (localStorage.getItem('userId')) {
+        this.router.navigate(['/welcome']);
+       }
    }
 
   ngOnInit() {
@@ -51,8 +55,6 @@ get f() { return this.registerForm.controls; }
     if (this.registerForm.invalid) {
         return;
     }
-    console.log(this.registerForm.value);
-   // alert("this is ques "+this.profileBean.authQuestion);
 }
 
 isValidForm() {
@@ -83,7 +85,6 @@ isGender() {
 }
 
 register() {
-  alert('control is in register');
   this.profileBean.firstName = this.registerForm.value.firstName;
   this.profileBean.lastName = this.registerForm.value.lastName;
   this.profileBean.gender = this.registerForm.value.gender;
@@ -94,11 +95,9 @@ register() {
   this.profileBean.password = this.registerForm.value.password;
   this.profileBean.authQuestion = this.registerForm.value.question;
   this.profileBean.authAnswer = this.registerForm.value.answer;
-  console.log('Data' + this.profileBean);
   this.userService.registration(this.profileBean)
   .subscribe(data => {
     this.tempdata = data;
-    alert('User registered sucsessfully.\n User Id is ' + this.tempdata.userId);
   });
 }
 

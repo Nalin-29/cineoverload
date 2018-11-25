@@ -18,6 +18,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { MyfavouriteComponent } from './myfavourite/myfavourite.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { SignupComponent } from './signup/signup.component';
     WelcomeComponent,
     MyfavouriteComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

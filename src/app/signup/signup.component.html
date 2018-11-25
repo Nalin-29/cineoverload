@@ -3,7 +3,14 @@
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" autocomplete="false" class="form">
       <h4 class="form-header">Sign up
         <i class="fa fa-sign-in" aria-hidden="true"></i>
+      
       </h4>
+      <div *ngIf="tempdata.userId">
+          <h4>
+                Account Created Successfully - Your Login ID is : {{tempdata.userId}}
+          </h4>
+            
+    </div>
       <div class="control">
           <label>First Name</label>
           <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />

@@ -5,6 +5,11 @@
         Login
         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
       </h4>
+      <div *ngIf="loginMessage">
+        <strong>
+            <h4>{{loginMessage}}</h4>
+        </strong>
+      </div>
       <div class="control">
         <label for="userID">User Id</label>
         <input ngModel #useridField="ngModel" name="userid" id="userid"  [(ngModel)]="credentialsBean.userID" required type="text">

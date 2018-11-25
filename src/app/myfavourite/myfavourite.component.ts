@@ -19,6 +19,9 @@ export class MyfavouriteComponent implements OnInit {
   link: String;
   constructor(private service: MovieServiceService, private route: ActivatedRoute, private router: Router) {
    this.route.params.subscribe( params => this.pageId = params['pageId']);
+   if (!localStorage.getItem('userId')) {
+    this.router.navigate(['/login']);
+   }
    if (!this.pageId) {
      router.navigate(['favourite/1']);
    }
@@ -71,7 +74,6 @@ showCards() {
   if (this.myfavMovieList) {
     const flag = this.isMovePossibe(this.pageId);
     if (flag ===  false) {
-      console.log('Vibhansh');
       location.replace('favourite/1');
     }
     const x = this.pageId * 4;
@@ -94,5 +96,9 @@ if (pageId > len) {
 return false;
 }
 return true;
+}
+logout() {
+  localStorage.removeItem('userId');
+  this.router.navigate(['/login']);
 }
 }

@@ -1,26 +1,18 @@
-
 #bodi{
     margin-top: -2vw;
 }
-#position{
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 #backGround{
     height:40.2vw;
     width:100%;
-
 }
-
-
-
-
 
 #logo{
     height:4vw;
     width:9vw;
-    margin:0.5vw 0vw 1vw 1vw; 
+    margin:0vw 0vw 0vw 1vw;
+    margin-top: -1.5vh; 
 }
 
 .well{
@@ -36,11 +28,25 @@
     text-align: inherit
 }
 
-#cardd{
-    width: 111vh;
-    height: 30vh;
-    margin-left: 20vw;
+#btn-favouritesignup{
+    margin-left: 30.5vw;
+    background-color: rgb(42, 24, 145);
+    color: rgb(226, 224, 111);
+    height:3vw;
+    width:7vw;
+    text-align: inherit
 }
+
+#btn-favouritelogin{
+    margin-left: 1.5vw;
+    background-color: rgb(42, 24, 145);
+    color: rgb(226, 224, 111);
+    height:3vw;
+    width:6vw;
+    text-align: inherit
+}
+
+
 
 #favour{
     font-size: 1vw;
@@ -74,7 +80,7 @@ form.example button {
     background: rgb(226, 224, 111);
     color: white;
     font-size: 1.24vw;
-    border: 0.07vw solid grey;
+    border: 0.07vw solid rgb(42, 24, 145);
     border-left: none;
     cursor: pointer;
     
@@ -106,77 +112,136 @@ form.example::after {
     margin: 0;
   }
   
-  #myUL li a {
-    border: 1px solid rgb(192, 29, 29);
+  #myUL div a {
+    border: 1px solid rgb(194, 192, 103);
     margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6;
-    padding: 12px;
+    padding: 0.878vw;
     text-decoration: none;
-    font-size: 18px;
-    color: black;
+    font-size: 1.317vw;
+    color: rgb(42, 24, 145);
     display: block
   }
   
-  #myUL li a:hover:not(.header) {
-    background-color: rgb(209, 27, 27);
+  #myUL div a:hover:not(.header) {
+    background-color: rgb(194, 192, 103);
   }
 
   #listing{
-      width:51vw;
-      margin-left: 19vw;
-  }
-  
-  #btn{
-      background-color: brown;
-      width: 8.124450951683748vw;
-      height: 6.0882800608828vh;
-      font-size: 13px;
-  }
-  @media only screen and (max-width: 1044px){
-      #btn{
-        background-color: brown;
-        width: 50px;
-        height: 35px;
-        font-size: 13px;
-      }
+      width:49.2vw;
+      margin-left: 20.1vw;
   }
 
-  @media only screen and (max-width: 767px){
-    #cardId{
-        margin-left: 16vw;
-    }
+  .scrolling-wrapper1 {
+  
+        height:7vw;
+        overflow-y: scroll;
+      
+  }  
+
+  .scrolling-wrapper2 {
+  
+    height:8.9vw;
+    overflow-y: scroll;
+  
+}  
+
+  #myUL li button:hover:not(.header) {
+    background-color: rgb(194, 192, 103);
   }
-      @media only screen and (max-width: 540px){
-        form.example input[type=search] {
-            padding: 0.732vw;
-            font-size: 1.24vw;
-            border: 0.07vw solid grey;
-            width: 50%;
-            height: 15%;
-            background: #f1f1f1;
-            margin-left:20vw;
-        }
-        #btn{
-            background-color: brown;
-            width: 12.124450951683748vw;
-            height: 8.0882800608828vh;
-            font-size: 13px;
-        }
+
+  #moreItem{
+      width:100%;
+      height:100%;
+      border: 1px solid rgb(194, 192, 103);
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 0.878vw;
+    text-decoration: none;
+    font-size: 1.317vw;
+    color: rgb(42, 24, 145);
+    display: block
+  }
+
+  
+    
+    .card-title {
+        text-transform: uppercase;
+        color: #E44424;
+        font-size:1vw;
+    }
+    
+    .card-text {
+        margin-top:0.497vw;
+        margin-bottom:0.534vw;
+        background-color:#FFFFFF;
+        color:#000000;
+        font-size:0.8vw;
+        padding-right: 1vw;
+    }
+    
+    
+    .imga{
+        height:7vw;
+        width:12vw;
+        margin:1.5vw 0vw 1vw 2vw;
+        
+    } 
+    
+    
+    
+    #data{
+    margin:-10.3vw 0vw 3vw 18vw;
+    }
+    
+    #loop{
+        background-color: white;
+        border: 0.073vw solid rgb(42, 24, 145);
+        border-radius: .6vw;
+        height:9vw;
+        width:40vw;
+     
+    }
+ 
+    
+    #dot {
+        height: 4vw;
+        width: 4vw;
+        background-color:rgb(173, 171, 16);
+        border-radius:10vw;
+        margin-left: 42vw;
+        margin-top:-13vw;
+       
       }
-      @media only screen and (max-width: 400px){
-        #btn{
-            background-color: brown;
-            width: 15.124450951683748vw;
-            height: 8.0882800608828vh;
-            font-size: 13px;
+
+      
+      @media screen and (max-width: 800px) {
+
+        #btn-favouritesignup{
+            margin-left: 26vw;
+            background-color: rgb(42, 24, 145);
+            color: rgb(226, 224, 111);
+            height:3vw;
+            width:7vw;
+            text-align: inherit
         }
-      }
-      @media only screen and (max-width: 370px){
-        #img{
-            width: 40.124450951683748vw;
-            height: 30.124450951683748vw;
+
+        #dot {
+            height: 4vw;
+            width: 4vw;
+            background-color:rgb(173, 171, 16);
+            border-radius:10vw;
+            margin-left: 42vw;
+            margin-top:-18vw;
+           
+          } 
+
+          .card-text {
+            margin-top:-0.35vw;
+            margin-bottom:1vw;
+            background-color:#FFFFFF;
+            color:#000000;
+            font-size:0.8vw;
+            padding-right: 1vw;
         }
-        #cardId{
-            margin-left: 16vw;
-        }
-      }
+}    

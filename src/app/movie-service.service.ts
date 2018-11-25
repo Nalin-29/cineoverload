@@ -28,7 +28,6 @@ export class MovieServiceService {
   }
 
   public addfavMovie(movie) {
-    alert('Add called' + movie.movieId);
     return this.http.post(this.baseUrl1 + '/favourite-movies/favAdd/' + movie.movieId, movie.movieId);
   }
   public requestMovieList(title) {
@@ -45,10 +44,8 @@ public requestFavouriteDelete(movieId) {
 
 public UserLogin(credentialsBean) {
   return this.http.post<CredentialsBean>(this.baseUrl1 + '/login-signup-movies/login', credentialsBean);
-  // return this.http.post<CredentialsBean>(this.baseUrl+"login",credentials);
  }
  public registration(profileBean) {
-   alert('I have reached here');
    return this.http.post<ProfileBean>(this.baseUrl1 + '/login-signup-movies/register', profileBean);
  }
  public UserLogout(userID) {
@@ -56,7 +53,6 @@ public UserLogin(credentialsBean) {
  }
 
  public forgotPassword(credentialsBean) {
-   alert('I am in service');
   return this.http.post<CredentialsBean>(this.baseUrl1 + '/login-signup-movies/forgotPassword', credentialsBean);
  }
 }
